@@ -5,14 +5,13 @@ const animatedStr = (string) => {
     if (i === string.length - 1) {
       setTimeout(() => {
         process.stdout.write(`${string[i]}\n`);
-      }, i * 50)
-    }
-    else {
+      }, i * 50);
+    } else {
       setTimeout(() => {
         process.stdout.write(`${string[i]}`);
-      }, i * 50)
+      }, i * 50);
     }
   }
-}
+};
 
-animatedStr(sentence)
+animatedStr(sentence);
